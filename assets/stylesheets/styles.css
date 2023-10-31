@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+@font-face {
+  font-family: "Font Family 1";
+  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Family 2";
+  src: url("../fonts/BonheurRoyale-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Font Family 3";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #777777;
+  font-size: 12px;
+  font-weight:normal;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.horizontal-nav {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0, 0, 0, 0;
+  
+}
+
+.horizontal-nav a {
+  color: #110646;
+  text-decoration:none;
+  display: inline-block;
+  margin: 20px 0px;
+  padding: 50px 80px 5px 5px;
+  text-align: right;
+  
+}
+
+.horizontal-nav a:hover {
+  transition: all 0.5s ease;
+  color: #26517a;
+  cursor: grab;
+}
+
+header a.logo {
+  transition: all 0.5s ease;
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 150px;
+  /* change dish-01.png to your loge image */
+  background: url(../images/dagne\ dover\ logo.png) no-repeat 0 0;
+  background-size: contain;
+  top: 57px;
+  left: 20px;
+  z-index: 100;
+}
+header a.logo:hover {
+  transition: all 0.5s ease;
+  opacity: 0.8;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: right;
+  padding: 50;
+  margin: 0;
+}
+
+.dropdown {
+  /*width: 100%;*/
+  transition: all 0.5s ease;
+  position: absolute;
+  display: none;
+  /* hide dropdown menu and button in bigger screen size */
+  top: 0;
+  /* top right bottom left work with position:absolute, set an absolute position where to put the dropdown menu */
+  right: 0;
+  z-index: 100;
+  /* by default, always align to left */
+  /*right: 0;*/
+  /* if dropdown is set to right, dropdown-content should be set to right */
+}
+
+.dropbtn {
+  background-color: rgba(0, 102, 102, 0);
+  color: #a85c5c;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  line-height: normal;
+  text-align: right;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  /* set display to none, so dropdown menu won't show till hover dropdown */
+  position: absolute;
+  right: 0;
+  /* if dropdown is set to right, dropdown-content should be set to right */
+  background-color: rgba(0, 102, 102, 0.8);
+  min-width: 280px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: right;
+}
+
+.dropdown-content a {
+  transition: all o.5s ease;
+  color: #110837;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  line-height: normal;
+}
+
+.dropdown-content a:hover {
+  transition: all 0.5s ease;
+  background-color: #339999;
+}
+
+.dropdown:hover .dropdown-content {
+  transition: all 0.5 ease;
+  display: block;
+}
+
+.dropdown:hover {
+  transition: all 0.5s ease;
+  background-color: rgba(0, 102, 102, 0.8);
+}
+  
+.active-menu-item {
+  background-color: #339999;
+}
+
+.padding-right {
+  padding-right: 15px;
+}
+
+.to-top {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+div.to-top a {
+  border-bottom: none;
+}
+
+footer > div.social-icon {
+  padding: 30px;
+  display: flex;
+  justify-content: left;
+}
+
+footer a {
+  border-bottom: none;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 30px;
+    padding-bottom: 10px;
+  }
+
+  .horizontal-nav {
+    display: none;
+    /* hide the nav bar in small screen size */
+  }
+
+  .dropdown {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: block;
+    /* show dropdown menu and button in small screen size */
+  }
+
+  .dropdown-content {
+    min-width: 500px;
+  }
+}
+<style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: rgb(215, 115, 57);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    footer {
+      width: 100%;
+      /*padding: 20px;*/
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(215, 115, 57);
+      color:#0d3348;
+    }
+
+
+    footer a:hover {
+      color: rgb(215, 115, 57);
+      text-decoration: none;
+    }
+
+    /* flex-direction: column */
+    footer section.first-column {
+      width: 30%;
+      height: 400px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align:left;
+    }
+
+    footer section.second-column {
+      width: 30%;
+      height: 400px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align:left;
+    }
+    footer section.third-column {
+      width: 30%;
+      height: 300px;
+      padding: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-evenly;
+      text-align:left;
+    }
+
+
+    footer section.signup-info {
+      width: 40%;
+      height: 300px;
+      font-size: 22px;
+      padding: 40px;
+      color: #474545;
+      background-color:rgb(215, 115, 57);
+      display: flex;
+      flex-direction: column;
+      justify-content:space-evenly;
+      text-align: right;
+
+    }
+
+    footer section.contact-info > div {
+      padding-top: 5px;
+    }
+
+    .footer-content {
+      width: 100%;
+      background-color:#0a2d4a;
+      justify-content: center;
+    }
+    <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    
+
+    .hero-text {
+      justify-content: left;
+      font-size: 80px;
+      position:absolute;
+      padding-top: 27.5%;
+      padding-left: 82%;
+    }
+
+    .footer-content {
+      width: 100%;
+      background-color: #8b3a04;
+    }
+
+    .hero-button {
+      position:fixed;
+      bottom: 10%;
+      right: 0%;
+      border-radius: 10px;
+      border: none;
+      background-color: #0a2d4a;
+      color: white;
+      font-size: 20px;
+      padding: 20px;
+      cursor: pointer;
+    }
+
+    button.hero-button a {
+      position: sticky;
+      display: inline;
+      border: none;
+      color: #ffffff;
+      padding: 0;
+    }
+  </style>
+  <style>
+    .container {
+      width: 70%;
+      padding: 30px;
+      float: left;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+      color: green;
+    }
+
+    .image-responsive {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .slick-slide {
+      padding: 0 5px;
+    }
+
+    .your-class div p {
+      margin: 5px 0;
+      text-align: center;
+    }
+  </style>

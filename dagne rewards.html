@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>Nav bar flex</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .horizontal-nav {
+      background-color: rgba(255, 254, 253, 0.7);
+    }
+
+    h1 {
+      color: #791a1a;
+      font-size: 120px;
+      font-weight: bold;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      z-index: -100;
+    }
+
+    .hero-text {
+      position:absolute;
+      top: 10%;
+      left: 10%;
+    }
+
+    .footer-content {
+      width: 100%;
+      background-color: #8b3a04;
+    }
+
+    .hero-button {
+      position: absolute;
+      bottom: 10%;
+      right: 0%;
+      border-radius: 10px;
+      border: none;
+      background-color: #0a2d4a;
+      color: white;
+      font-size: 20px;
+      padding: 20px;
+      cursor: pointer;
+    }
+
+    button.hero-button a {
+      display: inline;
+      border: none;
+      color: #ffffff;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- TODO: go assets/stylesheets/styles.css, look for the logo class and change the image -->
+    <a class="logo" href="home.html"></a>
+  <nav>
+    <div class="horizontal-nav flex-container">
+      <a href="home.html">HOME</a>
+      <a href="eco efforts.html">ECO EFFORTS</a>
+      <a href="unisex.html">UNISEX</a>
+      <a href="new arrivals.html">NEW ARRIVALS</a>
+      <a href="#" class="active-menu-item">DAGNE REWARDS</a>
+      <a href="customize.html">CUSTOMIZE BAGS</a>
+    </div>
+    <!-- dropdown-menu -->
+    <div class="dropdown">
+      <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
+      <div class="dropdown-content">
+        <a href="home.html">HOME</a>
+        <a href="eco efforts.html">ECO EFFORTS</a>
+        <a href="unisex.html">UNISEX</a>
+        <a href="new arrivals.html">NEW ARRIVALS</a>
+        <a href="#" class="active-menu-item">DAGNE REWARDS</a>
+        <a href="customize.html">CUSTOMIZE BAGS</a>
+      </div>
+    </div>
+  </nav>
+  <section style="width: auto; padding:20px;">
+    <article style="width: 70%; float: left; ">
+      <div style="border-right: 1px solid rgb(181, 181, 181);">
+        <!-- TODO: add content -->
+        hello page-5.html
+      </div>
+    </article>
+    <aside style="width: 30%; float: right; padding-left: 20px;">
+      <!-- TODO: add content -->
+      <div>
+        hello class
+      </div>
+    </aside>
+  </section>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: rgb(215, 115, 57);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    footer {
+      width: 100%;
+      /*padding: 20px;*/
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(215, 115, 57);
+      color:#0d3348;
+    }
+
+
+    footer a:hover {
+      color: rgb(215, 115, 57);
+      text-decoration: none;
+    }
+
+    /* flex-direction: column */
+    footer section.first-column {
+      width: 30%;
+      height: 400px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align:left;
+    }
+
+    footer section.second-column {
+      width: 30%;
+      height: 400px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align:left;
+    }
+    footer section.third-column {
+      width: 30%;
+      height: 300px;
+      padding: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-evenly;
+      text-align:left;
+    }
+
+
+    footer section.signup-info {
+      width: 40%;
+      height: 300px;
+      font-size: 22px;
+      padding: 40px;
+      color: #474545;
+      background-color:rgb(215, 115, 57);
+      display: flex;
+      flex-direction: column;
+      justify-content:space-evenly;
+      text-align: right;
+
+    }
+
+    footer section.contact-info > div {
+      padding-top: 5px;
+    }
+
+    .footer-content {
+      width: 100%;
+      background-color:#0a2d4a;
+      justify-content: center;
+    }
+
+  </style>
+</head>
+
+<body>
+   <!-- Main content -->
+  <section style="width: 100%; height: 200px; background-color: rgba(255, 254, 253, 0.7);">SHOP THE FEED</section>
+  <footer>
+    <section class="first-column">
+      <div class="footer-headline">CUSTOMER SERVICE</div>
+      <a href="#" target="_blank">Contact us</a>
+      <a href="#" target="_blank">FAQ</a>
+      <a href="#" target="_blank">Product care</a>
+      <a href="#" target="_blank">Large orders</a>
+      <a href="#" target="_blank">Dagne Heroes discount</a>
+      <a href="#" target="_blank">Dagne Rewards</a>
+      <a href="#" target="_blank">Gift cards</a>
+      
+    </section>
+
+    <section class="second-column">
+      <div class="footer-headline">ABOUT DAGNE DOVER</div>
+      <a href="#" target="_blank">Philosophy & Founders</a>
+      <a href="#" target="_blank">Almost vintage</a>
+      <a href="#" target="_blank">Eco efforts</a>
+      <a href="#" target="_blank">Our materials</a>
+      <a href="#" target="_blank">Stock lists</a>
+      <a href="#" target="_blank">Careers</a>
+      <a href="#" target="_blank">Visit us</a>
+      
+    </section>
+    <section class="third-column">
+      <div class="footer-headline">DOCS</div>
+      <a href="#" target="_blank">Accessibility</a>
+      <a href="#" target="_blank">Privacy</a>
+      <a href="#" target="_blank">Terms</a>
+      <a href="#" target="_blank">Conditions</a>
+      <a href="#" target="_blank">Best sellers</a>
+      
+    </section>
+    <section class="signup-info">
+      
+        <h3>LETS CHAT</h3>
+        <h6>Keep up with the latest news, plus get 10% off your first purchase. Already signed up for emails? Get 10% off when you sign up for texts</h6>
+        <span><label>Email: </label><input type="email" placeholder="enter your email"/></span>
+        <span><label>Phone number: </label><input type="phone number" placeholder="optional"/></span>
+
+      </section>
+  
+    
+  </footer>
+  <footer class="footer-content">
+    <div class="social-icon">
+      <!-- Facebook -->
+      <a href="" target="_blank" class="fa fa-facebook-f fa-lg padding-right" style="color: #ffffff;"></a>
+      <!--Instagram-->
+      <a href="" target="_blank" class="fa fa-instagram fa-lg padding-right" style="color: #ffffff;"></a>
+      <!-- Twitter -->
+      <a href="" target="_blank" class="fa fa-twitter fa-lg padding-right" style="color: #ffffff;"></a>
+      <!-- Pinterest -->
+      <a href="" target="_blank" class="fa fa-pinterest fa-lg padding-right" style="color: #ffffff;"></a>
+      <!-- Linkedin -->
+      <a href="" target="_blank" class="fa fa-linkedin fa-lg padding-right" style="color: #ffffff;"></a>
+      <!-- GitHub -->
+      <a href="" target="_blank" class="fa fa-github-alt fa-lg" style="color: #ffffff;"></a>
+    </div>
+  </footer>
+
+</body>
+</body>
+</html>
