@@ -3,255 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Carousel Bootstrap</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
-  <style>
-    div.carousel-area {
-      width: 70%;
-      
-      padding: 0px 40px 0px 40px;
-    }
-  </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
   <title>Nav bar flex</title>
   
   <style>
-    * {
-      padding: 0;
-      margin: 0;
-    }
-    .horizontal-nav {
-      background-color: rgba(255, 254, 253, 0.7);
-    }
 
-    h1 {
-      color: #791a1a;
-      font-size: 120px;
-      font-weight: bold;
-    }
-
-    .container {
-      position: relative;
-      width: 100%;
-      z-index: -100;
-    }
-
-    .hero-text {
+.hero-text {
+      justify-content: left;
+      font-size: 80px;
       position:absolute;
-      top: 10%;
-      left: 10%;
+      padding-top: 150px;
+      padding-left: 910px;
     }
-
-    .footer-content {
-      width: 100%;
-      background-color: #8b3a04;
-    }
-
-    .hero-button {
-      position: absolute;
-      bottom: 10%;
-      right: 0%;
-      border-radius: 10px;
-      border: none;
-      background-color: #0a2d4a;
-      color: white;
-      font-size: 20px;
-      padding: 20px;
-      cursor: pointer;
-    }
-
-    button.hero-button a {
-      display: inline;
-      border: none;
-      color: #ffffff;
-      padding: 0;
-    }
-    #home-eco-text p {
-    font-size: 18px;
-    color: #F9F2EC;
-    letter-spacing: 0.18px;
-    text-align: right;
-    line-height: 36.9px;
-}
-p {
-    margin: 0 0 20px 0;
-}
-#home-eco-tabs {
-    padding-left: 55px;
-}
-user agent stylesheet
-div {
-    display: block;
-}
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-#home-eco-text {
-    text-align: right;
-    padding-right: 55px;
-    border-right: 1px solid #F9F2EC;
-    
-}
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-    color:#791a1a;
-    margin: 0 0 13px 0;
-    font-family: nimbus-sans, sans-serif;
-}
-user agent stylesheet
-h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-#home-eco-content {
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 0 auto;
-    text-align: left;
-    padding-top: 75px;
-    padding-bottom: 75px;
-    padding-left: 20px;
-    padding-right: 20px;
-    align-items: center;
-    min-height: 364px;
-}
-
-#home-eco {
-    background-color:#0a2d4a;
-    color: #F9F2EC !important;
-    text-align: center;
-}
-.home-eco-tab h2 {
-    font-family: nimbus-sans-condensed, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 30px;
-    color: #F9F2EC;
-    letter-spacing: 0.63px;
-    line-height: 1;
-    cursor: pointer;
-    font-size: 30px;
-    letter-spacing: 0.5px;
-
-
-
-}
-body {
-    line-height: 18px;
-    font-size: 12px;
-    color: #666666;
-    font-family: nimbus-sans, 'Trebuchet MS', sans-serif;
-    font-weight: 40;
-    background-color: #fff;
-  
-}
-.home-eco-tab-toggle {
-    width: 20px;
-    float: left;
-    font-family: nimbus-sans-condensed, sans-serif;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 35px;
-    color: #F9F2EC;
-    letter-spacing: 0.63px;
-    line-height: 1;
-    cursor: pointer;
-}
-.home-eco-tab-toggle-plus {
-    display: block;
-    margin-top: -7px;
-}
-.home-eco-tab-container.active .home-eco-tab-toggle-minus {
-    display: block;
-}
-.home-eco-tab-toggle-minus {
-    display: none;
-    margin-top: -12px;
-}
-#shopify-section-collection #collection .collection-title h2, #shopify-section-collection #collection .collection-title p{
-	line-height: 19px;
-}
-.slideout-content .materials-message{
-	display: none !important;
-}
-@media (min-width: 960px){
-	#search #collection .product .details {
-		height: 120px;
-	}
-}
-@media (max-width: 960px){
-	#shopify-section-collection #collection .category-sale{
-		top: 0px;
-	}
-	.collection-title .materials-message{
-		margin-bottom: 10px;
-	}
-}
-@media (max-width: 640px){
-	#product_description .materials-message{
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
-	.materials-message-desktop{
-		display: none;
-	}
-	.materials-message-mobile{
-		display: block;
-	}
-}
-.grecaptcha-badge { visibility: hidden; }
-
-
-
-
-/* MAX WIDTH */
-@media (min-width: 2700px) {
-  body{
-    text-align: center;
-    left: 0; 
-    right: 0;
-    position: relative;
-    margin: 0 auto !important;
-	max-width: 2700px;
-  }
-  #promo-container{
-    margin: 0 auto;
-	max-width: 2700px;
-  }
-  #nav{
-	max-width: 2700px;
-  }
-  .nav-a .dropdown{
-	left:calc((100vw - 2800px + 100px) / 2);
-  }
-}
-
   </style>
-  
 </head>
 <body>
- 
-
   <header>
     <!-- TODO: go assets/stylesheets/styles.css, look for the logo class and change the image -->
     <a class="logo" href="home.html"></a>
@@ -267,7 +35,7 @@ body {
     <!-- dropdown-menu -->
     <div class="dropdown">
       <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
-      <div class="dropdown-content">
+      <div class="horizontal-nav flex-container">
         <a href="home.html">HOME</a>
         <a href="eco efforts.html">ECO EFFORTS</a>
         <a href="#" class="active-menu-item">UNISEX</a>
@@ -277,467 +45,152 @@ body {
       </div>
     </div>
   </nav>
-  <section style="width: auto; padding:20px;">
-    <article style="width: 70%; float: left; ">
-      <div style="border-right: 1px solid rgb(181, 181, 181);">
-        <!-- TODO: add content -->
-        hello page-3.html
-      </div>
-    </article>
-    <aside style="width: 30%; float: right; padding-left: 20px;">
-      <!-- TODO: add content -->
-      <div>
-        hello class
-      </div>
-    </aside>
-  </section>
-</section>
-<div class="carousel-area">
   
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <!-- add more carousel indicators here -->
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="./assets/images/26452ddfb3bbcbdbabf45696efe96413.jpeg" alt="NEOPRENE" style="width: 100%" />
-        <div class="carousel-caption">
-          <h6>NEOPRENE</h6>
-        </div>
-      </div>
-      <!-- add more carousel items here -->
-      <div class="item">
-        <img src="./assets/images/469c06a639bb8a322dc84ca70b45c7cd.jpeg" alt="AIRMESH" style="width: 100%" />
-        <div class="carousel-caption">
-          <h6>AIRMESH</h6>
-        </div>
-      </div>
-      <div class="item">
-        <img src="./assets/images/613f1e251e02586062b4a058da80e701.jpeg" alt="LEATHER" style="width: 100%" />
-        <div class="carousel-caption">
-          <h6>LEATHER</h6>
-        </div>
-      </div>
-      <div class="item">
-        <img src="./assets/images/cba070121f1b07ce86abac48ee18aace.jpeg" alt="RECYCLED POLY" style="width: 100%" />
-        <div class="carousel-caption">
-          <h6>RECYCLED POLY</h6>
-        </div>
-      </div>
-      <div class="item">
-        <img src="./assets/images/c2d511a5deb575d850580ac2a98f145c.jpeg" alt="CANVAS" style="width: 100%" />
-        <div class="carousel-caption">
-          <h6>CANVAS</h6>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
-<script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/JavaScript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-<div id="shopify-section-index-eco" class="shopify-section"><div id="home-eco">
-  <div id="home-eco-content">
-    <div id="home-eco-text">
-      <h1>
-        Bags for Better
-      </h1>
-      <p>     
-         Every day, we work on our commitment to becoming a more eco&#8209;conscious brand. We are constantly developing new ways to minimize the impact we are having on Mama&nbsp;Earth.
-      </p>
-      <a href="/pages/our-story#about-4" class="btn btn-clear btn-animate">
-        LEARN MORE
-      </a>
-    </div>
-    <div id="home-eco-tabs">
-      
-      	<div id="home-eco-tab-container-1" class="home-eco-tab-container active">
-      	  <div class="home-eco-tab-toggle" role="button" aria-expanded="true" >
-            <div class="home-eco-tab-toggle-minus">
-              <svg width="15px" height="5px" viewBox="0 0 15 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="HP-Refresh-Desktop-Hover" transform="translate(-765.000000, -2547.000000)" fill="#FFFFFF">
-                          <g id="Eco-Efforts" transform="translate(0.000000, 2427.000000)">
-                              <g id="Data" transform="translate(112.000000, 107.000000)">
-                                  <polygon id="Rectangle" points="653 13 668 13 668 18 660.980347 18 653 18"></polygon>
-                              </g>
-                          </g>
-                      </g>
-                  </g>
-              </svg>
-            </div>
-            <div class="home-eco-tab-toggle-plus">
-              +
-            </div>
-      	  </div>
-          <div class="home-eco-tab">
-            <h2>
-              Recycled Materials
-            </h2>
-            <p aria-hidden="false">
-              We've developed fabrics and materials that remove plastic bottles from landfills. That's right, our Neoprene Collection linings, our dust bags, and our Nova and Mila styles are made with recycled plastic&nbsp;bottles.<span style="height: 20px; display: block;clear: both;">&nbsp;</span>
-            </p>
-          </div>
-      	</div>
-      
-      	<div id="home-eco-tab-container-2" class="home-eco-tab-container ">
-      	  <div class="home-eco-tab-toggle" role="button" aria-expanded="false" >
-            <div class="home-eco-tab-toggle-minus">
-              <svg width="15px" height="5px" viewBox="0 0 15 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="HP-Refresh-Desktop-Hover" transform="translate(-765.000000, -2547.000000)" fill="#FFFFFF">
-                          <g id="Eco-Efforts" transform="translate(0.000000, 2427.000000)">
-                              <g id="Data" transform="translate(112.000000, 107.000000)">
-                                  <polygon id="Rectangle" points="653 13 668 13 668 18 660.980347 18 653 18"></polygon>
-                              </g>
-                          </g>
-                      </g>
-                  </g>
-              </svg>
-            </div>
-            <div class="home-eco-tab-toggle-plus">
-              +
-            </div>
-      	  </div>
-          <div class="home-eco-tab">
-            <h2>
-              Ethical Manufacturing
-            </h2>
-            <p aria-hidden="false">
-              Our factory partners abide by strict compliance regulations that outline impeccable standards concerning health, environment, child labor, compensation, and discrimination. We work closely with our partners on a daily basis, with whom we hold long-standing&nbsp;friendships.
-              <span style="height: 20px; display: block;clear: both;">&nbsp;</span>
-            </p>
-          </div>
-      	</div>
-      
-      	<div id="home-eco-tab-container-3" class="home-eco-tab-container ">
-      	  <div class="home-eco-tab-toggle" role="button" aria-expanded="false" >
-            <div class="home-eco-tab-toggle-minus">
-              <svg width="15px" height="5px" viewBox="0 0 15 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="HP-Refresh-Desktop-Hover" transform="translate(-765.000000, -2547.000000)" fill="#FFFFFF">
-                          <g id="Eco-Efforts" transform="translate(0.000000, 2427.000000)">
-                              <g id="Data" transform="translate(112.000000, 107.000000)">
-                                  <polygon id="Rectangle" points="653 13 668 13 668 18 660.980347 18 653 18"></polygon>
-                              </g>
-                          </g>
-                      </g>
-                  </g>
-              </svg>
-            </div>
-            <div class="home-eco-tab-toggle-plus">
-              +
-            </div>
-      	  </div>
-          <div class="home-eco-tab">
-            <h2>
-              Sustainable approach
-            </h2>
-            <p aria-hidden="false">
-              Moving forward, we want to create for the better. This means eco-friendlier materials, less packaging, and finding second lives for our bags through various initiatives, including Almost Vintage and donating to humans in&nbsp;need.
-              <span style="height: 20px; display: block;clear: both;">&nbsp;</span>
-            </p>
-          </div>
-      	</div>
-      
-    </div>    
-    
-  </div>
-</div>
-<script type="text/javascript">
-  function ecoToggle(id){
-     if($("#"+id).hasClass("active")){
-       $("#"+id).removeClass("active");
-       $("#"+id).find("p").attr("aria-hidden","true");
-       $("#"+id).find(".home-eco-tab-toggle").attr("aria-expanded","false");
-     } else {
-       var count = 0;
-       $(".home-eco-tab-container").each(function() {
-         if($(this).hasClass("active")){
-             count = 1;
-         }
-         if($(this).attr("id") == id){
-         } else {
-             $(this).removeClass("active");
-             $(this).find(".home-eco-tab-toggle").attr("aria-expanded","false");
-             $(this).find("p").attr("aria-hidden","false");
-         }
-       });
-       if(count == 1){
-         setTimeout(function() {
-           $(".home-eco-tab-container").each(function() {
-             if($(this).attr("id") == id){
-                 $(this).addClass("active");
-                 $(this).find(".home-eco-tab-toggle").attr("aria-expanded","true");
-                 $(this).find("p").attr("aria-hidden","false");        
-             }
-           });
-         }, 400);
-       } else {
-         $(".home-eco-tab-container").each(function() {
-           if($(this).attr("id") == id){
-               $(this).addClass("active");
-               $(this).find(".home-eco-tab-toggle").attr("aria-expanded","true");
-               $(this).find("p").attr("aria-hidden","false");        
-           }
-         });
-       }
-     }
-   }
-   /*
-   $(".home-eco-tab-container").on( "click", function() {
-     var parent = $(this).attr("id");
-     ecoToggle(parent)
-   });
-   */
-   $(".home-eco-tab-toggle").on( "click", function() {
-     var parent = $(this).parent().attr("id");
-     ecoToggle(parent);
-   });
-   $(".home-eco-tab h2").on( "click", function() {
-     var parent = $(this).parent().parent().attr("id");
-     ecoToggle(parent);
-   });
- </script></div>
-   <div id="shopify-section-index-rewards" class="shopify-section">
-   <style>
-     #hero-2-1 .page-title{
-       font-size: 59.68px;
- color: #FFFFFF;
- text-align: right;
- line-height: 59px;
- text-shadow: 0 2px 113px rgba(0,0,0,0.36);
- text-transform: uppercase;
-     } 
-     #hero-2-1 p{
-       color: #FFFFFF;
- letter-spacing: 0.18px;
- text-align: right;
- line-height: 36.9px;
- text-shadow: 0 2px 52px rgba(0,0,0,0.36);
- max-width: 482px;
-     } 
-     #hero-2-1{
-       background-image: url(//www.dagnedover.com/cdn/shop/files/RewardsImage_eeb4025f-605d-47ee-ba62-9d7af83bdab1_2400x.jpg?v=1645133096);
-     }
-     @media (max-width: 740px){
-       #hero-2-1 .page-title{
-         font-size: 44.02px;
- line-height: 44.37px;
- text-shadow: 0 2px 113px rgba(0,0,0,0.36); 
-       } 
-       #hero-2-1 p{
-         display: none;
-       } 
-       #hero-2-1{
-         background-image: url(//www.dagnedover.com/cdn/shop/files/2-mobile_1200x.jpg?v=1643315857);
-       }
-     }
-   </style>
  
-   <style>
-     #hero-2-2 .page-title{
-       text-transform: uppercase;
- font-size: 59.68px;
- color: #FFFFFF;
- text-align: right;
- line-height: 59px;
- text-shadow: 0 2px 113px rgba(0,0,0,0.36);
-     } 
-     #hero-2-2 p{
-       max-width: 459px;
- color: #FFFFFF;
- letter-spacing: 0.18px;
- text-align: right;
- line-height: 36.9px;
- text-shadow: 0 2px 52px rgba(0,0,0,0.50);
-     } 
-     #hero-2-2{
-       background-image: url(//www.dagnedover.com/cdn/shop/files/AlmostVintageImg_2400x.jpg?v=1645133200);
-     }
-     @media (max-width: 740px){
-       #hero-2-2 .page-title{
-         font-size: 44.02px;
- line-height: 44.37px;
- text-shadow: 0 2px 113px rgba(0,0,0,0.36); 
-       } 
-       #hero-2-2 p{
-         display: none;
-       } 
-       #hero-2-2{
-         background-image: url(//www.dagnedover.com/cdn/shop/files/almost-vintage-mobile_1200x.jpg?v=1644511741);
-       }
-     }
-   </style>
 
-<style>
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-    color: rgb(215, 115, 57);
-  }
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  footer {
-    width: 100%;
-    /*padding: 20px;*/
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(215, 115, 57);
-    color:#0d3348;
-  }
-
-
-  footer a:hover {
-    color: rgb(215, 115, 57);
-    text-decoration: none;
-  }
-
-  /* flex-direction: column */
-  footer section.first-column {
-    width: 30%;
-    height: 400px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align:left;
-  }
-
-  footer section.second-column {
-    width: 30%;
-    height: 400px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align:left;
-  }
-  footer section.third-column {
-    width: 30%;
-    height: 300px;
-    padding: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    text-align:left;
-  }
-
-
-  footer section.signup-info {
-    width: 40%;
-    height: 300px;
-    font-size: 22px;
-    padding: 40px;
-    color: #474545;
-    background-color:rgb(215, 115, 57);
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    text-align: right;
-
-  }
-
-  footer section.contact-info > div {
-    padding-top: 5px;
-  }
-
-  .footer-content {
-    width: 100%;
-    background-color:#0a2d4a;
-    justify-content: center;
-  }
-
-</style>
-</head>
-
-<body>
- <!-- Main content -->
-<footer>
-  <section class="first-column">
-    <div class="footer-headline">CUSTOMER SERVICE</div>
-    <a href="#" target="_blank">Contact us</a>
-    <a href="#" target="_blank">FAQ</a>
-    <a href="#" target="_blank">Product care</a>
-    <a href="#" target="_blank">Large orders</a>
-    <a href="#" target="_blank">Dagne Heroes discount</a>
-    <a href="#" target="_blank">Dagne Rewards</a>
-    <a href="#" target="_blank">Gift cards</a>
+  <div class="slideshow-container">
+    <div class="hero-text">
+  
+      <p>DAGNE</p>
+      <P>UNISEX</p>
+    </div>
     
-  </section>
+      
+    <div class="mySlides fade">
+    <img src="assets/images/be0619c7126c7861bccb683413d18f91.jpeg" style="width: 100%;">
+    <div class="text">Airmesh</div>
+  </div>
 
-  <section class="second-column">
-    <div class="footer-headline">ABOUT DAGNE DOVER</div>
-    <a href="#" target="_blank">Philosophy & Founders</a>
-    <a href="#" target="_blank">Almost vintage</a>
-    <a href="#" target="_blank">Eco efforts</a>
-    <a href="#" target="_blank">Our materials</a>
-    <a href="#" target="_blank">Stock lists</a>
-    <a href="#" target="_blank">Careers</a>
-    <a href="#" target="_blank">Visit us</a>
-    
-  </section>
-  <section class="third-column">
-    <div class="footer-headline">DOCS</div>
-    <a href="#" target="_blank">Accessibility</a>
-    <a href="#" target="_blank">Privacy</a>
-    <a href="#" target="_blank">Terms</a>
-    <a href="#" target="_blank">Conditions</a>
-    <a href="#" target="_blank">Best sellers</a>
-    
-  </section>
-  <section class="signup-info">
-    
-      <h3>LETS CHAT</h3>
-      <h6>Keep up with the latest news, plus get 10% off your first purchase. Already signed up for emails? Get 10% off when you sign up for texts</h6>
-      <span><label>Email: </label><input type="email" placeholder="enter your email"/></span>
-      <span><label>Phone number: </label><input type="phone number" placeholder="optional"/></span>
+    <div class="mySlides fade">
+    <img src="assets/images/469c06a639bb8a322dc84ca70b45c7cd.jpeg" style="width: 100%;">
+    <div class="text">Leather</div>
+  </div>
 
+    <div class="mySlides fade">
+    <img src="assets/images/613f1e251e02586062b4a058da80e701.jpeg" style="width: 100%;">
+    <div class="text">Neoprene</div>
+  </div>
+
+    <div class="mySlides fade">
+    <img src="assets/images/abfb9776d4c577b647837ebbf7ad3bd4.jpeg" style="width: 100%;">
+    <div class="text">Pebbled leather</div>
+  </div>
+
+    <div class="mySlides fade">
+    <img src="assets/images/be0619c7126c7861bccb683413d18f91.jpeg" style="width: 100%;">
+    <div class="text">Coated Canvas</div>
+  </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+   </div>
+  <br>
+
+  <div style="text-align: center">
+     <span class="dot" onclick="currentSlide(1)"></span>
+     <span class="dot" onclick="currentSlide(2)"></span>
+     <span class="dot" onclick="currentSlide(3)"></span>
+     <span class="dot" onclick="currentSlide(4)"></span>
+     <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+ 
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+ 
+
+
+  
+  <footer>
+    <section class="first-column">
+      <div class="footer-headline">CUSTOMER SERVICE</div>
+      <a href="#" target="_blank">Contact us</a>
+      <a href="#" target="_blank">FAQ</a>
+      <a href="#" target="_blank">Product care</a>
+      <a href="#" target="_blank">Large orders</a>
+      <a href="#" target="_blank">Dagne Heroes discount</a>
+      <a href="#" target="_blank">Dagne Rewards</a>
+      <a href="#" target="_blank">Gift cards</a>
+      
     </section>
 
-  
-</footer>
-<footer class="footer-content">
-  <div class="social-icon">
-    <!-- Facebook -->
-    <a href="" target="_blank" class="fa fa-facebook-f fa-lg padding-right" style="color: #ffffff;"></a>
-    <!--Instagram-->
-    <a href="" target="_blank" class="fa fa-instagram fa-lg padding-right" style="color: #ffffff;"></a>
-    <!-- Twitter -->
-    <a href="" target="_blank" class="fa fa-twitter fa-lg padding-right" style="color: #ffffff;"></a>
-    <!-- Pinterest -->
-    <a href="" target="_blank" class="fa fa-pinterest fa-lg padding-right" style="color: #ffffff;"></a>
-    <!-- Linkedin -->
-    <a href="" target="_blank" class="fa fa-linkedin fa-lg padding-right" style="color: #ffffff;"></a>
-    <!-- GitHub -->
-    <a href="" target="_blank" class="fa fa-github-alt fa-lg" style="color: #ffffff;"></a>
-  </div>
-</footer>
+    <section class="second-column">
+      <div class="footer-headline">ABOUT DAGNE DOVER</div>
+      <a href="#" target="_blank">Philosophy & Founders</a>
+      <a href="#" target="_blank">Almost vintage</a>
+      <a href="#" target="_blank">Eco efforts</a>
+      <a href="#" target="_blank">Our materials</a>
+      <a href="#" target="_blank">Stock lists</a>
+      <a href="#" target="_blank">Careers</a>
+      <a href="#" target="_blank">Visit us</a>
+      
+    </section>
+    <section class="third-column">
+      <div class="footer-headline">DOCS</div>
+      <a href="#" target="_blank">Accessibility</a>
+      <a href="#" target="_blank">Privacy</a>
+      <a href="#" target="_blank">Terms</a>
+      <a href="#" target="_blank">Conditions</a>
+      <a href="#" target="_blank">Best sellers</a>
+      
+    </section>
+    <section class="signup-info">
+      
+        <h3>LETS CHAT</h3>
+        <h6>Keep up with the latest news, plus get 10% off your first purchase. Already signed up for emails? Get 10% off when you sign up for texts</h6>
+        <span><label>Email: </label><input type="email" placeholder="enter your email"/></span>
+        <span><label>Phone number: </label><input type="phone number" placeholder="optional"/></span>
 
-</body>
+      </section>
+  
+   
+
+    </footer>
+   <footer>
+  <footer class="footer-content">
+    <div class="social-icon">
+      <!-- Facebook -->
+      <a href="" target="_blank" class="fa fa-facebook-f fa-lg padding-right" style="color: #ffffff;"></a>
+      <!--Instagram-->
+      <a href="" target="_blank" class="fa fa-instagram fa-lg padding-right" style="color: #ffffff;"></a>
+      <!-- Twitter -->
+      <a href="" target="_blank" class="fa fa-twitter fa-lg padding-right" style="color: #ffffff;"></a>
+      <!-- Pinterest -->
+      <a href="" target="_blank" class="fa fa-pinterest fa-lg padding-right" style="color: #ffffff;"></a>
+      <!-- Linkedin -->
+      <a href="" target="_blank" class="fa fa-linkedin fa-lg padding-right" style="color: #ffffff;"></a>
+      <!-- GitHub -->
+      <a href="" target="_blank" class="fa fa-github-alt fa-lg" style="color: #ffffff;"></a>
+    </div>
+  </footer>
+
 </body>
 </html>

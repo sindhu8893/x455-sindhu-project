@@ -28,9 +28,28 @@ body {
 
 
 
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .horizontal-nav {
+      background-color: rgba(247, 184, 122, 0.7);
+    
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      z-index: -100;
+    }
+
+
+  
+
+
 .horizontal-nav {
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 0, 0, 0, 0;
+  padding-top: 40px;
   
 }
 
@@ -39,7 +58,8 @@ body {
   text-decoration:none;
   display: inline-block;
   margin: 20px 0px;
-  padding: 50px 80px 5px 5px;
+  height: fit-content;
+  padding: 10px 80px 5px 5px;
   text-align: right;
   
 }
@@ -48,6 +68,7 @@ body {
   transition: all 0.5s ease;
   color: #26517a;
   cursor: grab;
+
 }
 
 header a.logo {
@@ -59,13 +80,13 @@ header a.logo {
   /* change dish-01.png to your loge image */
   background: url(../images/dagne\ dover\ logo.png) no-repeat 0 0;
   background-size: contain;
-  top: 57px;
+  top: 50px;
   left: 20px;
   z-index: 100;
 }
 header a.logo:hover {
   transition: all 0.5s ease;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .flex-container {
@@ -198,7 +219,7 @@ a {
     min-width: 500px;
   }
 }
-<style>
+
     * {
       box-sizing: border-box;
     }
@@ -221,12 +242,13 @@ a {
       background-color: rgb(215, 115, 57);
       color:#0d3348;
     }
-
-
+  
     footer a:hover {
       color: rgb(215, 115, 57);
       text-decoration: none;
     }
+
+    
 
     /* flex-direction: column */
     footer section.first-column {
@@ -264,7 +286,7 @@ a {
       height: 300px;
       font-size: 22px;
       padding: 40px;
-      color: #474545;
+      color:#0a2d4a;
       background-color:rgb(215, 115, 57);
       display: flex;
       flex-direction: column;
@@ -275,33 +297,28 @@ a {
 
     footer section.contact-info > div {
       padding-top: 5px;
+      
     }
 
     .footer-content {
       width: 100%;
       background-color:#0a2d4a;
       justify-content: center;
+      
     }
-    <style>
-    * {
-      padding: 0;
-      margin: 0;
-    }
-
+ 
+   
     
 
     .hero-text {
-      justify-content: left;
+      /* justify-content: left;
       font-size: 80px;
       position:absolute;
       padding-top: 27.5%;
-      padding-left: 82%;
+      padding-left: 980px; */
     }
 
-    .footer-content {
-      width: 100%;
-      background-color: #8b3a04;
-    }
+    
 
     .hero-button {
       position:fixed;
@@ -323,31 +340,83 @@ a {
       color: #ffffff;
       padding: 0;
     }
-  </style>
-  <style>
+  
     .container {
       width: 70%;
       padding: 30px;
       float: left;
     }
 
-    .slick-next:before,
-    .slick-prev:before {
-      color: green;
-    }
+   
+    *{box-sizing: border-box;}
 
-    .image-responsive {
-      width: 100%;
-      height: auto;
-      display: block;
+    .slideshow-container {
+      max-width: 1000px;
+      
+      position: relative;
+      padding-right: 40px;
+      
     }
+ .mySlides{
+  display: none;
+ }
 
-    .slick-slide {
-      padding: 0 5px;
-    }
+ .prev, .next {
+  cursor: pointer;
+  position:absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+ }
 
-    .your-class div p {
-      margin: 5px 0;
-      text-align: center;
-    }
-  </style>
+ .next {
+  right: 40px;
+  border-radius: 3px 0 0 3px;
+ }
+  
+ .prev:hover, .next:hover {
+  background-color: #a85c5c;
+ }
+
+ .text {
+  color:#ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+ }
+
+ .dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 3px;
+  background-color:antiquewhite;
+  border-radius: 1%;
+  display: inline-block;
+  transition: background-color 0.6 ease;
+  background-position: right;
+ }
+
+ .active, .dot:hover {
+  background-color:#a85c5c;
+ }
+
+ .fade{
+  animation-name: fade;
+  animation-duration: 1.5s;
+ }
+
+ @keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+ }
+ 

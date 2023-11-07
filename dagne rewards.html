@@ -8,61 +8,63 @@
   <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
   <title>Nav bar flex</title>
   <style>
-    * {
-      padding: 0;
-      margin: 0;
-    }
-    .horizontal-nav {
-      background-color: rgba(255, 254, 253, 0.7);
-    }
-
-    h1 {
-      color: #791a1a;
-      font-size: 120px;
-      font-weight: bold;
-    }
-
     .container {
       position: relative;
       width: 100%;
       z-index: -100;
     }
-
-    .hero-text {
+  
+  .hero-image {
+    
+    height: 100%;
+    width: 77%;
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 40px;
+    z-index: -1;
+    
+  }
+  .hero-text {
+      justify-content: left;
+      font-size: 80px;
       position:absolute;
-      top: 10%;
-      left: 10%;
+      padding-top: 50px;
+      padding-left: 1000px;
     }
+    .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 70%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  background-position: center;
+  margin-left: 30px;
+}
 
-    .footer-content {
-      width: 100%;
-      background-color: #8b3a04;
-    }
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #c69696;
+}
 
-    .hero-button {
-      position: absolute;
-      bottom: 10%;
-      right: 0%;
-      border-radius: 10px;
-      border: none;
-      background-color: #0a2d4a;
-      color: white;
-      font-size: 20px;
-      padding: 20px;
-      cursor: pointer;
-    }
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
 
-    button.hero-button a {
-      display: inline;
-      border: none;
-      color: #ffffff;
-      padding: 0;
-    }
-  </style>
+</style>
 </head>
 <body>
   <header>
-    <!-- TODO: go assets/stylesheets/styles.css, look for the logo class and change the image -->
+   
     <a class="logo" href="home.html"></a>
   <nav>
     <div class="horizontal-nav flex-container">
@@ -86,111 +88,75 @@
       </div>
     </div>
   </nav>
-  <section style="width: auto; padding:20px;">
-    <article style="width: 70%; float: left; ">
-      <div style="border-right: 1px solid rgb(181, 181, 181);">
-        <!-- TODO: add content -->
-        hello page-5.html
-      </div>
-    </article>
-    <aside style="width: 30%; float: right; padding-left: 20px;">
-      <!-- TODO: add content -->
-      <div>
-        hello class
-      </div>
-    </aside>
-  </section>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      color: rgb(215, 115, 57);
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    footer {
-      width: 100%;
-      /*padding: 20px;*/
-      display: flex;
-      flex-direction: row;
-      background-color: rgb(215, 115, 57);
-      color:#0d3348;
-    }
-
-
-    footer a:hover {
-      color: rgb(215, 115, 57);
-      text-decoration: none;
-    }
-
-    /* flex-direction: column */
-    footer section.first-column {
-      width: 30%;
-      height: 400px;
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      text-align:left;
-    }
-
-    footer section.second-column {
-      width: 30%;
-      height: 400px;
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      text-align:left;
-    }
-    footer section.third-column {
-      width: 30%;
-      height: 300px;
-      padding: 35px;
-      display: flex;
-      flex-direction: column;
-      justify-content:space-evenly;
-      text-align:left;
-    }
-
-
-    footer section.signup-info {
-      width: 40%;
-      height: 300px;
-      font-size: 22px;
-      padding: 40px;
-      color: #474545;
-      background-color:rgb(215, 115, 57);
-      display: flex;
-      flex-direction: column;
-      justify-content:space-evenly;
-      text-align: right;
-
-    }
-
-    footer section.contact-info > div {
-      padding-top: 5px;
-    }
-
-    .footer-content {
-      width: 100%;
-      background-color:#0a2d4a;
-      justify-content: center;
-    }
-
-  </style>
-</head>
-
-<body>
+  
    <!-- Main content -->
-  <section style="width: 100%; height: 200px; background-color: rgba(255, 254, 253, 0.7);">SHOP THE FEED</section>
+
+   <section class="container">
+    
+    <div class="hero-text">
+     <p>DAGNE</p>
+     <p>REWARDS</p>
+   
+  </div>
+  <img class="hero-image" src="assets/images/dagne rewards.jpg" />
+</section>
+
+
+
+<button class="accordion">Dagne Dover Rewards Program! What is it?</button>
+<div class="panel">
+  <p>
+    With our Dagne Dover Loyalty Program, the more you spend, the more rewards you earn. Join the fam and get access to exclusive Dagne Dover discounts.</p>
+</div>
+
+<button class="accordion">How can I use my Reward points?</button>
+<div class="panel">
+  <p style="font-size: 14px;">Cost Savings: One of the primary benefits of using reward points is cost savings. By redeeming your points, you can significantly reduce the amount of money you need to spend out of pocket for the handbag, or even get it for free, depending on the number of points you have accumulated.
+
+    Freebies and Discounts: Some reward programs offer additional perks, such as free shipping, extended warranties, or exclusive discounts on certain products. These extras can enhance the overall value of your purchase.
+    
+    Loyalty Rewards: Many retailers and credit card companies offer loyalty programs to reward their regular customers. Accumulating points for a handbag purchase can be a way of these companies showing appreciation for your continued business.
+    
+    Flexibility: Reward programs often provide flexibility in how you can use your points. You might be able to redeem them for a variety of items, not just limited to handbags. This versatility allows you to choose products or services that best suit your needs.
+    
+    Incentive to Shop: Knowing that you can earn reward points can serve as an incentive to shop with a particular retailer or use a specific credit card. This can lead to more mindful spending and strategic shopping habits.
+    
+    Exclusive Access: Some reward programs offer exclusive access to events, sales, or products. This exclusivity can make your shopping experience more enjoyable and allow you to access items that might not be readily available to the general public.
+    
+    Financial Management: Using reward points wisely can be a part of effective financial management. By taking advantage of these programs, you can stretch your budget, allowing you to allocate your money to other essential expenses or savings goals.
+    
+    Gifts and Presents: If the handbag is a gift for someone else, using reward points can allow you to give a high-quality, desirable item without a significant financial burden, making gift-giving more enjoyable and less stressful.
+    
+    </p>
+</div>
+
+<button class="accordion">Dagne Dover credit card Benefits</button>
+<div class="panel">
+  <p>Dagne Dover credit card Benefits</p>
+</div>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+   
   <footer>
     <section class="first-column">
       <div class="footer-headline">CUSTOMER SERVICE</div>
