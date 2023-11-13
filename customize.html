@@ -7,9 +7,81 @@
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
   <title>Nav bar flex</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 80%;
+      margin-left: 110px;
+      border: 1px solid #ddd;
+      padding-bottom: 20px;
+    }
+    
+    th, td {
+      text-align: center;
+      padding: 18px;
+      font-size: 18px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #f9e5e5;
+    }
+    .container {
+      position: relative;
+      width: 100%;
+      z-index: -1;
+    }
+  
+  .hero-image {
+    
+    height: 20%;
+    width: 100%;
+    /* Center and scale the image nicely */
+    background-position: right;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size:auto;
+    padding-bottom: 40px;
+    z-index: -1;
+    
+  }
+  .hero-text {
+      justify-content: left;
+      font-size: 80px;
+      position:absolute;
+      padding-top: 50px;
+      padding-right: 980px;
+    }
+    
+    .btn {
+      border: 1px solid black;
+      background-color: white;
+      color: black;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-left: 1050px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    
+    /* Green */
+    .cart {
+      border-color: #0e0e0f;
+      color: black;
+      border-radius: 25px;
+    }
+    
+    .cart:hover {
+      background-color: #cfd3d6;
+      color: white;
+    }
+    
+    </style>
   
 </head>
 <body>
+ 
   <header>
     <!-- TODO: go assets/stylesheets/styles.css, look for the logo class and change the image -->
     <a class="logo" href="index.html"></a>
@@ -21,6 +93,8 @@
       <a href="new arrivals.html">NEW ARRIVALS</a>
       <a href="dagne rewards.html">DAGNE REWARDS</a>
       <a href="#" class="active-menu-item">CUSTOMIZE BAGS</a>
+      <img class="search">
+      <img src="assets/images/search icon.png">
     </div>
     <!-- dropdown-menu -->
     <div class="dropdown">
@@ -35,26 +109,93 @@
       </div>
     </div>
   </nav>
-  <section style="width: auto; padding:20px;">
-    <article style="width: 70%; float: left; ">
-      <div style="border-right: 1px solid rgb(181, 181, 181);">
-        <!-- TODO: add content -->
-        hello page-6.html
-      </div>
-    </article>
-    <aside style="width: 30%; float: right; padding-left: 20px;">
-      <!-- TODO: add content -->
-      <div>
-        hello class
-      </div>
-    </aside>
-  </section>
+  <section class="container">
+    
+    <div class="hero-text">
+     <p>DAGNE</p>
+     <p>CUSTOM</p>
+   
+  </div>
+  <img class="hero-image" src="assets/images/dagne checkers.jpg"/>
+</section>
+<button class="hero-button"><a href="https://www.dagnedover.com/" target="_blank">Get 10% off</a></button>
+
+  <p style="font-size: 28px; font-weight: bold; text-transform: capitalize; margin-left: 50px;padding-bottom: 20px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Want to customize your bag? No problem! We got you!</p>
+  <p style="font-size: 20px;line-height: normal;margin-left: 50px; padding-bottom: 50px;color:midnightblue;">At Dagne, We value our customers preferences, you can customize a bag according to your style with just a few clicks!</p>
   
-</head>
+  <table>
+    <tr>
+      <th>COLOR</th>
+      <th>MATERIAL</th>
+      <th>SIZE</th>
+      <th>ACCESSORIES</th>
+    </tr>
+    <tr>
+      <td>Purple</td>
+      <td>Leather</td>
+      <td>Small</td>
+      <td>Gold plated</td>
+    </tr>
+    <tr>
+      <td>Pink</td>
+      <td>Canvas</td>
+      <td>Medium</td>
+      <td>Silver oxidized</td>
+    </tr>
+    <tr>
+      <td>Yellow</td>
+      <td>Neoprene</td>
+      <td>Large</td>
+      <td>Gold Glossy</td>
+    </tr>
+    <tr>
+      <td>Green</td>
+      <td>Ripstop</td>
+      <td>Large</td>
+      <td>Gold Matte</td>
+      <tr>
+        <td>Orange</td>
+        <td>Pebbled</td>
+        <td>Extra large</td>
+        <td>Silver shiny</td>
+      </tr>
+      <tr>
+        <td>Neon pink</td>
+        <td>Neoprene</td>
+        <td>Large</td>
+        <td>Gold Oxidized</td>
+      </tr>
+      <tr>
+        <td>Black</td>
+        <td>Airmesh</td>
+        <td>Extra small</td>
+        <td>Gold Oxidized</td>
+      </tr>
+      <tr>
+        <td>Cerulean</td>
+        <td>Cloth</td>
+        <td>Laptop bag</td>
+        <td>Gold Oxidized</td>
+      </tr>
+      <tr>
+        <td>Viridian green</td>
+        <td>Organic cotton</td>
+        <td>Diaper bag</td>
+        <td>Gold Oxidized</td>
+      </tr>
+      <tr>
+        <td>Tan</td>
+        <td>Recycled poly</td>
+        <td>Tote bag</td>
+        <td>Gold Oxidized</td>
+      </tr>
+    
+  </table>
+  
+  <button class="btn cart">Add to Cart</button>
 
 <body>
    <!-- Main content -->
-  <section style="width: 100%; height: 200px; background-color: rgba(255, 254, 253, 0.7);">SHOP THE FEED</section>
   <footer>
     <section class="first-column">
       <div class="footer-headline">CUSTOMER SERVICE</div>

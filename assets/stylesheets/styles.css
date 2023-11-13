@@ -117,7 +117,7 @@ header a.logo:hover {
   background-color: rgba(0, 102, 102, 0);
   color: #a85c5c;
   padding: 15px;
-  font-size: 16px;
+  font-size: 12px;
   border: none;
   cursor: pointer;
   line-height: normal;
@@ -245,7 +245,7 @@ a {
   
     footer a:hover {
       color: rgb(215, 115, 57);
-      text-decoration: none;
+      text-decoration: underline;
     }
 
     
@@ -284,7 +284,7 @@ a {
     footer section.signup-info {
       width: 40%;
       height: 300px;
-      font-size: 22px;
+      font-size: 18px;
       padding: 40px;
       color:#0a2d4a;
       background-color:rgb(215, 115, 57);
@@ -409,3 +409,10 @@ a {
   to {opacity: 1}
  }
  
+ .search{
+  background-position: right;
+  margin-left: 980px;
+  position: relative;
+  padding-bottom: 20px;
+
+ }
